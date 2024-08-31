@@ -1,0 +1,132 @@
+
+
+body{
+    position: relative;
+}
+
+.page{
+ display: flex;
+ 
+ 
+
+}
+.left{
+    display:flex;
+}
+
+
+.head{
+    color: black;
+    list-style-type:none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    
+}
+
+.head:hover {
+    background-color: #e0e0e0;
+    border: 2px solid black;
+}
+
+nav{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.profile-data{
+    display: flex;
+
+    margin-left: 50%;
+    justify-content: space-between;
+    width: 10%;
+}
+.profile-icon{
+    cursor: pointer;
+}
+
+.modal-container{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+}
+
+.modal-1,.modal-2 ,.modal-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: yellow;
+    
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    height: 400px;
+    width: 30%;
+
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    }
+
+.modal-1:hover, .modal-2:hover, .modal-3:hover {
+        
+    transform: scale(1.05);
+        
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+    }
+
+
+p{
+    font-family:sans-serif ;
+    width: 80%;
+}
+
+.btn {
+    background-color: #FF4B2B; 
+    color: white;
+    border: none;
+    padding: 10px 20px; 
+    border-radius: 50px;
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; 
+}
+
+.btn:hover {
+    background-color: #FF1C0A; 
+}
+
+.btn:focus {
+    outline: none; 
+}
+
+
+select {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    border: 2px solid #FF4B2B;
+}

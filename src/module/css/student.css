@@ -1,12 +1,21 @@
-
-
 body{
+    margin: 0;
+    padding: 0%;
+}
+
+#main{
     position: relative;
+    
+}
+
+.student-body{
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
 }
 
 .page{
  display: flex;
- 
+
  
 
 }
@@ -46,26 +55,27 @@ nav{
     cursor: pointer;
 }
 
-.modal-container{
+.modal-container-s{
     display: flex;
     margin-left: 10%;
-    margin-top: 5%;
+    margin-top: 10%;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgb(255, 255, 255);
+    
+
     width: 80%;
 }
 
-.modal-1,.modal-2 ,.modal-3{
+.modal-1-s,.modal-2-s ,.modal-3-s{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     box-sizing: border-box;
-    background-color: yellow;
+    background-color: rgb(182, 152, 213);
     
-    margin-top: 30px;
+    margin-top: 10%;
     margin-bottom: 30px;
     border: 1px solid black;
     height: 400px;
@@ -79,7 +89,7 @@ nav{
     
     }
 
-.modal-1:hover, .modal-2:hover, .modal-3:hover {
+.modal-1-s:hover, .modal-2-s:hover, .modal-3-s:hover {
         
     transform: scale(1.05);
         
@@ -92,20 +102,20 @@ p{
     width: 80%;
 }
 
-.btn {
-    background-color: #FF4B2B; 
+.btn-s {
+    background-color: #000000; 
     color: white;
     border: none;
     padding: 10px 20px; 
     border-radius: 50px;
-    font-size: 16px; 
+    
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 20px; 
 }
 
-.btn:hover {
-    background-color: #FF1C0A; 
+.btn-s:hover {
+    background-color: #e9aaa6; 
 }
 
 .btn:focus {
@@ -130,3 +140,48 @@ select:focus {
     outline: none;
     border: 2px solid #FF4B2B;
 }
+
+@media (min-width: 600px) {
+    .modal-1, .modal-2, .modal-3 {
+        width: 45%;
+        max-width: 45%;
+    }
+
+    .profile-data {
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .page {
+        flex-direction: row;
+    }
+
+    .left {
+        flex-direction: row;
+        margin-left: 20px;
+    }
+
+    .modal-container-s {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .modal-1-s, .modal-2-s, .modal-3-s {
+        width: 30%;
+    }
+
+    .profile-data {
+        width: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .modal-1, .modal-2, .modal-3 {
+        width: 28%;
+        margin-top: 10%;
+    }
+}
+
+
+
